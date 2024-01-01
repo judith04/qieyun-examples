@@ -55,7 +55,7 @@ function 聲母規則() {
   if (is('清母')) return 'c';
   if (is('從母')) return is('二等') ? 'ch' : is('平聲') ? 'c' : 'z'; // 平送氣仄不送氣
   if (is('心母')) return 's';
-  if (is('邪母')) return is('平聲 尤之韻') ? 'c' : 's';
+  if (is('邪母')) return is('平聲 尤之陽鹽侵魚韻') ? 'c' : 's';
   if (is('莊母')) return is('宕假效江攝 或 止攝 合口 或 蟹咸山攝 二等') ? 'zh' : 'z'; // 莊組平翹律
   if (is('初母')) return is('宕假效江攝 或 止攝 合口 或 蟹咸山攝 二等') ? 'ch' : 'c'; // 莊組平翹律
   if (is('崇母')) {
@@ -68,7 +68,7 @@ function 聲母規則() {
   if (is('章母')) return 'zh';
   if (is('昌母')) return 'ch';
   if (is('常母')) return is('曾攝 入聲') ? 'zh' : is('平聲 齊侵清仙鹽陽尤魚虞眞蒸支鍾韻 或 一等') ? 'ch' : 'sh';
-  if (is('船書母')) return is('平聲 通攝 或 平聲 合口 山臻攝') ? 'ch' : 'sh'; // 章組擦音分化律
+  if (is('船書母')) return is('平聲 通攝 或 平聲 合口 山攝') ? 'ch' : 'sh'; // 章組擦音分化律
   if (is('日母')) return is('四等') ? 'l' : is('支之脂韻 開口 或 眞侵韻 入聲') ? '' : 'r';  
   let 不顎化 = '一等 或 二等 合口 或 二等 庚耕韻 或 三等 合口 祭微陽支脂凡廢韻 舒聲 或 三等 通攝 舒聲 或 四等 合口 齊韻'; // 見溪羣曉匣母不顎化條件
   if (is('見母')) return is(不顎化) ? 'g' : 'j';
@@ -136,7 +136,7 @@ function 韻母規則() {
   if (is('灰廢韻 幫組')) return 'ei';
   if (is('灰韻 開口')) return is('以母') ? 'iä' : 'ä'; 
   if (is('咍韻')) return is('合口') ? 'uei' : is('以母') ? 'iä' : 'ä';
-  if (is('泰韻 合口')) return is('見溪疑母') ? 'uä' : 'uei'; 
+  if (is('泰韻 合口')) return 'uei'; 
   if (is('泰韻 幫組')) return 'ei';
   if (is('泰韻 開口')) return is('以母') ? 'iä' : 'ä';  
 
@@ -199,7 +199,7 @@ function 韻母規則() {
 
   // 梗攝
   if (is('庚韻 入聲 二等')) return is('合口') ? 'uä' : 'ä';
-  if (is('庚韻 入聲 三等')) return is('莊組') ? 'y' : is('合口') ? 'ü' : 'i';
+  if (is('庚韻 入聲 三等')) return is('莊組') ? 'ä' : is('合口') ? 'ü' : 'i';
   if (is('庚韻 舒聲 二等')) return is('合口') ? 'uen' : 'en';
   if (is('庚韻 舒聲 三等 合口')) return is('心以影母') ?  'in' : is('云影母') ? 'iong' : 'ong';
   if (is('庚韻 舒聲 三等 開口')) return is('知莊章組') ? 'en' : 'in';
